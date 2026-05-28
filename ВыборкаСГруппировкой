@@ -1,0 +1,3 @@
+Select UserName
+From Users
+Group by UserName

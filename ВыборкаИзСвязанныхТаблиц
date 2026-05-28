@@ -1,0 +1,5 @@
+Select StickerName, UserName, Price
+From Subscriptions Join Stickers on Subscriptions.StickerID=Stickers.StickerID Join Users on Subscriptions.UserID=Users.UserID
+Where Price >=600000
+Group by UserName,StickerName, Price
+Order by UserName
